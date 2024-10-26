@@ -14,7 +14,7 @@
         "intermediate": "Intermediate",
         "experienced":"Experienced"
     },
-    "description": "Enthusiastic engineering graduate with solid background in coding and design. Proficient in CSS, HTML5, JavaScript, TypeScript, and Python, with hands-on experience in frameworks such as React, Express.js, and FastAPI. Skilled in database management with MongoDB, along with knowledge of Laravel, MySQL and Redis. Passionate about building efficient, scalable software solutions, with a strong understanding of both front-end and back-end development.",
+    "description": "Engineering graduate with a strong foundation in coding and design. Proficient in CSS, HTML5, JavaScript, TypeScript, and Python, with experience in frameworks like React, Express.js, and FastAPI. Skilled in MongoDB, with knowledge of Laravel, MySQL, and Redis. Passionate about creating scalable, efficient software solutions across front and back end",
     "front_end":"Front-end",
     "back-end_&_other_tools": "Back-end & Other Tools",
     "download_CV":"Download CV",
@@ -35,6 +35,7 @@
     },
     "about":{
         "title":"About Me",
+        "description":"Enthusiastic engineering graduate with solid background in coding and design. Proficient in CSS, HTML5, JavaScript, TypeScript, and Python, with hands-on experience in frameworks such as React, Express.js, and FastAPI. Skilled in database management with MongoDB, along with knowledge of Laravel, MySQL and Redis. Passionate about building efficient, scalable software solutions, with a strong understanding of both front-end and back-end development.",
         "personal_information":{
             "title":"Personal Information",
             "name":"Name: Ali Osman",

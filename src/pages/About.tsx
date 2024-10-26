@@ -1,6 +1,5 @@
 import { useEffect } from "react"
 import { useTranslation } from "react-i18next"
-import AlisImage from '../assets/Ali-pic.jpg'
 
 const About = () => {
   const {t, i18n} = useTranslation()
@@ -16,9 +15,9 @@ const About = () => {
       <div className="flex max-md:flex-col max-md:mt-10 mt-[60px] gap-20">
 
         <div className="flex flex-grow flex-col gap-5 w-full">
-          <div className="flex flex-col gap-5 max-md:flex-row max-md:items-center">
+          <div className="flex max-sm:flex-col gap-5 max-md:flex-row md:flex-col max-md:items-center">
             <img 
-            src={AlisImage} 
+            src={"/Ali-pic.jpg"} 
             alt="Ali's image" 
             className=" rounded-full size-[200px] object-cover"
             />
@@ -27,7 +26,7 @@ const About = () => {
             </p>
           </div>
           <p className='max-xl:w-full w-full overflow-hidden  text-lg xl:text-xl'>
-            {t('description')}
+            {t('about.description')}
           </p>
           <a 
             href='/Ali Osman Cv.pdf'

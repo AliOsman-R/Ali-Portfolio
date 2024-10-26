@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return(
     <>
-      <div className={`flex md:flex-row items-center w-full flex-col gap-3 text-[16px]`}>
+      <div className={`flex md:flex-row items-center w-full flex-col max-md:gap-10 gap-3 md:text-sm `}>
         {navBarListFunction(t).map((item,index) => (
           <Link  
             key={index} 

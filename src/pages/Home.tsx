@@ -9,7 +9,7 @@ const Home = () => {
   
 
   return (
-    <div className="mx-10">
+    <div className="mx-20 max-sm:mx-0">
       <section id="/" className="min-h-[80vh] pt-10">
         <Hero/>
       </section>

@@ -23,6 +23,9 @@ export default {
         hoverColor:"#b0b0b0aa",
         hoverIcon:"#9696966f"
       },
+      screens:{
+        xs:"400px"
+      },
       animation: {
         slideInFromRight:'slideInFromRight 1.5s ease-out forwards',
         slideInFromLeft:'slideInFromLeft 1.5s ease-out forwards',
