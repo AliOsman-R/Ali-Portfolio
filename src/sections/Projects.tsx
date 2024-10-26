@@ -19,7 +19,7 @@ const Projects = () => {
                 className="project-image-style" 
               />
             </a>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 w-full">
               <h2 className={commonStyle}>{t("projects.name")}</h2>
               <a 
                 href={project.link} 
@@ -29,7 +29,7 @@ const Projects = () => {
                 {project.projectName}
               </a>
               <h2 className={commonStyle}>{t("projects.description")}</h2>
-              <p className="w-[90%] overflow-hidden">{t("projects.notesApp")}</p>
+              <p className="w-[90%] overflow-hidden">{project.description}</p>
               <h2 className={commonStyle}>{t("projects.github")}</h2>
               <a 
                 href={project.github} 

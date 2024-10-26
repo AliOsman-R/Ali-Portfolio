@@ -13,6 +13,7 @@ import mongoDbImage from '../assets/MongoDB.png'
 import expressImage from '../assets/ExpressJS.png'
 import jwtImage from '../assets/JWT.jpeg'
 import notesApp from '../assets/notesApp.png'
+import portfolioWeb from '../assets/portfolioApp.png'
 
 export const navBarListFunction = (t:TFunction<"translation", undefined>) => {
 
@@ -63,6 +64,14 @@ export const skillsListFunction = (t:TFunction<"translation", undefined>) => {
 export const projectsListFunction = (t:TFunction<"translation", undefined>) => {
 
   const projectsList = [
+    {
+      projectName:"My Portfolio",
+      description:t("projects.portfolio"),
+      link:"https://alinotesweb.netlify.app/",
+      github:"https://github.com/AliOsman-R/Ali-Portfolio",
+      tools:["React.js", "Tailwind"],
+      image:portfolioWeb
+    },
     {
       projectName:"Notes App",
       description:t("projects.notesApp"),

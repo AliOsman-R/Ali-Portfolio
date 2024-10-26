@@ -58,7 +58,7 @@
     }
 
     .project-image-style {
-        @apply max-xl:w-full xl:w-[1000px] h-full rounded-md transition-all transform hover:opacity-80 hover:shadow-lg max-sm:h-[200px]
+        @apply max-xl:w-full xl:max-w-[500px] min-h-[391px] h-full rounded-md transition-all transform hover:opacity-80 hover:shadow-lg max-sm:h-[200px]
     }
     
     .contact-input-style {
