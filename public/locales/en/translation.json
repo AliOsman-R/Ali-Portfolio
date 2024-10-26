@@ -1,0 +1,52 @@
+{
+    "Welcome_to_React": "Hi, i'm yooo boo <1>Ali</1> Full-Stack Web Developer",
+    "name":"Ali Osman",
+    "full_stack_developer":"Full Stack Web Developer",
+    "nav_bar": {
+        "home":"home",
+        "about":"About",
+        "skills":"Skills",
+        "projects":"Projects",
+        "contact":"Contact"
+    },
+    "level" : {
+        "advanced": "Advanced",
+        "intermediate": "Intermediate",
+        "experienced":"Experienced"
+    },
+    "description": "Enthusiastic engineering graduate with solid background in coding and design. Proficient in CSS, HTML5, JavaScript, TypeScript, and Python, with hands-on experience in frameworks such as React, Express.js, and FastAPI. Skilled in database management with MongoDB, along with knowledge of Laravel, MySQL and Redis. Passionate about building efficient, scalable software solutions, with a strong understanding of both front-end and back-end development.",
+    "front_end":"Front-end",
+    "back-end_&_other_tools": "Back-end & Other Tools",
+    "download_CV":"Download CV",
+    "projects":{
+        "name":"Name",
+        "description":"Description",
+        "tools":"Tools",
+        "github":"Github",
+        "notesApp":"The Notes App is a simple and efficient tool that allows users to write, update, and delete notes effortlessly. It features a search function to find specific notes and includes a toggle between light and dark mode for a personalized experience.",
+        "":""
+    },
+    "contact":{
+        "title":"Send me a massage",
+        "name":"Name",
+        "email":"Email",
+        "message":"Message",
+        "button":"Send"
+    },
+    "about":{
+        "title":"About Me",
+        "personal_information":{
+            "title":"Personal Information",
+            "name":"Name: Ali Osman",
+            "age":"Age: 23",
+            "nationality":"Nationality: Sudan",
+            "major":"Major: Software Engineering"
+        },
+        "links":{
+            "title":"Links",
+            "linkedIn":"LinkedIn",
+            "email":"Email",
+            "github":"Github"
+        }
+    }
+}

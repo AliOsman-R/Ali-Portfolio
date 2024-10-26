@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+* {
+    @apply transition-colors duration-200
+}
+
+@layer components {
+    .app-style {
+        @apply min-h-screen bg-gray-50 p-5 transition-background-color duration-500 ease-in-out dark:bg-darkColor
+    }
+    
+    .navbar-style {
+        @apply fixed left-0 right-0 top-0 z-50 transition-background-color duration-500 ease-in-out bg-gray-50 dark:bg-darkColor
+    }
+
+    .navbar-link-style {
+        @apply hover:bg-hoverColor font-medium px-3 py-2 rounded-md uppercase
+    }
+
+    .navbar-menu-style {
+        @apply md:hidden absolute top-[70px] h-screen w-[90%] z-50 flex flex-col gap-4 bg-gray-50 dark:bg-darkColor dark:text-white transition-all duration-500 ease-out
+    }
+
+    .navbar-change-mode-style {
+        @apply bg-gray-200 rounded-lg p-[10px] hover:ring-2 hover:ring-gray-500 dark:bg-btnColor dark:text-white z-[999]
+    }
+
+    .navbar-select-lang-style {
+        @apply rounded-md outline outline-gray-500 hover:ring hover:ring-gray-400 px-4 py-3 dark:bg-btnColor dark:text-white
+    }
+
+    .hero-name-style {
+        @apply xl:text-[90px] pb-4 text-6xl bg-gradient-to-r from-red-400 via-orange-500 to-yellow-500 bg-clip-text tracking-tight text-transparent
+    }
+
+    .hero-full-stack-name-style {
+        @apply xl:text-4xl text-2xl pb-3 bg-gradient-to-r from-pink-400 via-slate-500 to-purple-600 bg-clip-text tracking-tight text-transparent
+    }
+
+    .skill-card-style {
+        @apply p-5 bg-white hover:bg-gray-100 md:w-[160px] xl:w-full dark:bg-cardColor dark:hover:bg-darkColor dark:text-white border shadow-md border-gray-300 dark:border-borderColor flex flex-col gap-2 rounded-md
+    }
+
+    .project-card-style {
+        @apply bg-white dark:bg-cardColor border border-gray-300 shadow-md w-full min-h-[300px] p-10 flex xl:flex-row max-xl:flex-col gap-10 rounded-md
+    }
+
+    .project-name-style {
+        @apply font-bold bg-gradient-to-r from-pink-400 bg-slate-500 to-purple-400 bg-clip-text text-transparent text-xl
+    }
+
+    .project-image-style {
+        @apply max-xl:w-full xl:w-[1000px] h-full rounded-md transition-all transform hover:opacity-80 hover:shadow-lg max-sm:h-[200px]
+    }
+    
+    .contact-input-style {
+        @apply w-full transition ease-in duration-200 p-3 rounded-md bg-inputColor border border-borderColor outline-none focus:bg-gray-50 dark:focus:bg-darkColor dark:bg-cardColor dark:text-white dark:border-2
+    }
+    
+    .contact-label-style {
+        @apply absolute top-3 text-borderColor bg-transparent peer-focus:bg-gray-50 peer-focus:translate-y-[-25px] px-3 peer-focus:text-sm font-semibold transition-all ease-in duration-200 dark:text-white dark:peer-focus:bg-darkColor
+    }
+
+    .contact-button-style {
+        @apply bg-blue-500 w-full px-3 py-2 rounded-md text-white text-lg hover:bg-blue-400 flex justify-center items-center disabled:bg-gray-300 transition-all duration-500
+    }
+
+    .icon-hover-style {
+        @apply hover:bg-hoverIcon p-2 rounded-md dark:hover:text-white
+    }
+
+}
