@@ -67,7 +67,7 @@ export const projectsListFunction = (t:TFunction<"translation", undefined>) => {
     {
       projectName:"My Portfolio",
       description:t("projects.portfolio"),
-      link:"https://alinotesweb.netlify.app/",
+      link:"https://ali-portfolio-2024.vercel.app/",
       github:"https://github.com/AliOsman-R/Ali-Portfolio",
       tools:["React.js", "Tailwind"],
       image:portfolioWeb

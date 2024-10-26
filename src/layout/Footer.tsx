@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full mt-10 border-t-2 p-5 pt-10 gap-10 dark:text-textColor">
-      <div className="flex flex-col max-xl:items-center max-xl:gap-10 xl:flex-row xl:justify-around w-full">
+      <div className="flex flex-col max-xl:items-center max-xl:gap-10 xl:flex-row xl:justify-around w-[70%]">
         <div className="flex justify-between h-[40px] w-[50%] xl:w-[30%]">
           <a 
             href="https://github.com/AliOsman-R" 
@@ -48,7 +48,7 @@ const Footer = () => {
         ))}
         </div>
       </div>
-      <span className="text-xl">&copy; Ali Osman 2024</span>
+      <span className="text-lg">&copy; Ali Osman 2024</span>
     </div>
   )
 }

@@ -26,7 +26,7 @@
     }
 
     .navbar-menu-style {
-        @apply md:hidden absolute top-[70px] h-screen w-[90%] z-50 flex flex-col gap-4 bg-gray-50 dark:bg-darkColor dark:text-white transition-all duration-500 ease-out
+        @apply md:hidden absolute top-[70px] left-0 right-0 h-screen w-full z-50 flex flex-col items-center gap-4 bg-gray-50 dark:bg-darkColor dark:text-white transition-all duration-500 ease-out
     }
 
     .navbar-change-mode-style {
@@ -38,19 +38,19 @@
     }
 
     .hero-name-style {
-        @apply xl:text-[90px] pb-4 text-6xl bg-gradient-to-r from-red-400 via-orange-500 to-yellow-500 bg-clip-text tracking-tight text-transparent
+        @apply xl:text-[70px] pb-4 text-6xl bg-gradient-to-r from-red-400 via-orange-500 to-yellow-500 bg-clip-text tracking-tight text-transparent 
     }
 
     .hero-full-stack-name-style {
-        @apply xl:text-4xl text-2xl pb-3 bg-gradient-to-r from-pink-400 via-slate-500 to-purple-600 bg-clip-text tracking-tight text-transparent
+        @apply xl:text-2xl text-2xl pb-3 bg-gradient-to-r from-pink-400 via-slate-500 to-purple-600 bg-clip-text tracking-tight text-transparent 
     }
 
     .skill-card-style {
-        @apply p-5 bg-white hover:bg-gray-100 md:w-[160px] xl:w-full dark:bg-cardColor dark:hover:bg-darkColor dark:text-white border shadow-md border-gray-300 dark:border-borderColor flex flex-col gap-2 rounded-md
+        @apply p-5 bg-white hover:bg-gray-100 md:w-[160px] xl:w-full dark:bg-cardColor dark:hover:bg-darkColor dark:text-white border shadow-md border-gray-300 dark:border-borderColor flex flex-col items-center gap-2 rounded-md
     }
 
     .project-card-style {
-        @apply bg-white dark:bg-cardColor border border-gray-300 shadow-md w-full min-h-[300px] p-10 flex xl:flex-row max-xl:flex-col gap-10 rounded-md
+        @apply bg-white dark:bg-cardColor border border-gray-300 shadow-md w-[80%] min-h-[300px] max-xl:p-3 p-10  flex xl:flex-row max-xl:flex-col gap-7 rounded-md
     }
 
     .project-name-style {
@@ -58,7 +58,7 @@
     }
 
     .project-image-style {
-        @apply max-xl:w-full xl:max-w-[500px] min-h-[391px] h-full rounded-md transition-all transform hover:opacity-80 hover:shadow-lg max-sm:h-[200px]
+        @apply max-xl:w-full xl:max-w-[500px] min-h-[375px] h-full rounded-md transition-all transform hover:opacity-80 hover:shadow-lg max-sm:h-[200px]
     }
     
     .contact-input-style {

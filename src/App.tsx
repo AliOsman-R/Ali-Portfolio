@@ -15,7 +15,7 @@ const App = () => {
         <div className="app-style">
           <Toaster position="top-center" duration={4000} richColors/>
           <Header/>
-          <div className="pt-[80px] container mx-auto px-10">
+          <div className="pt-[80px] container mx-auto md:px-10">
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/about' element={<About/>}/>

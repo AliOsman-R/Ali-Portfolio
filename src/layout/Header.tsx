@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { BiMenu, BiX } from "react-icons/bi";
 import Navbar from "../components/Navbar";
 
-const menuCloseBtnStyle = 'absolute left-[15px] transition-all duration-500 ease-out transform'
+const menuCloseBtnStyle = 'absolute transition-all duration-500 ease-out transform'
 
 const Header = () => {
   const [pageMode, setPageMode] = useState("light")
@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
   <div className="navbar-style">
-    <div className="flex justify-between items-center container mx-auto p-5">
+    <div className="flex justify-between items-center container mx-auto py-5 max-xs:px-3">
       <div className="md:hidden dark:text-white">
         <button 
           onClick={toggleMenu} 

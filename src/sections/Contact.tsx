@@ -54,7 +54,7 @@ const Contact = () => {
   
   return (
     <div className="dark:text-white">
-      <h1 className="text-4xl font-bold w-full">{t("nav_bar.contact")}</h1>
+      <h1 className="text-[28px] font-bold w-full">{t("nav_bar.contact")}</h1>
       <div className="flex justify-center items-center">
         <form onSubmit={handleSend} className="flex flex-col justify-center items-center gap-10 mt-20 max-xl:w-full xl:w-[50%]">
           <h1 className='text-center text-xl font-semibold'>  {t("contact.title")}</h1>

@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import myImage from '../assets/Ali-pic.jpg'
 import { useRef } from 'react'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { MdOutlineEmail } from 'react-icons/md'
@@ -17,14 +16,14 @@ const Hero = () => {
 
   return (
     <div className='flex xl:flex-row max-xl:flex-col justify-between'>
-      <div ref={textRef} className={`flex flex-col py-[60px] gap-5 xl:w-2/3 w-full  ${textAnimate}`}>
+      <div ref={textRef} className={`flex flex-col py-[60px] gap-5 xl:w-2/3 w-full max-xl:text-center ${textAnimate}`}>
         <h1 className='hero-name-style'>{
         t("name")}
         </h1>
         <p className='hero-full-stack-name-style'>
           {t('full_stack_developer')}
         </p>
-        <p className='max-xl:w-full w-[80%] overflow-hidden dark:text-textColor text-lg xl:text-xl'>
+        <p className='max-xl:w-full w-[80%] overflow-hidden dark:text-textColor text-lg'>
           {t('description')}
         </p>
         <div className="flex justify-between items-center w-[80%] max-xl:w-full pt-5 dark:text-textColor">
@@ -59,7 +58,7 @@ const Hero = () => {
       </div>
       <img 
         ref={imageRef} 
-        src={myImage} 
+        src={'/Ali-pic.jpg'} 
         alt="Ali's image" 
         className={` max-h-[500px] max-w-[500px] max-xl:max-w-[1000px] w-full rounded-lg object-cover ${imageAnimate}`} 
       />

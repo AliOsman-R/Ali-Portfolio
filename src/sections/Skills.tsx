@@ -6,8 +6,8 @@ const Skills = () => {
 
   return (
     <div className="dark:text-white">
-      <h1 className="text-4xl font-bold w-full">{t("nav_bar.skills")}</h1>
-      <div className="flex max-md:flex-col gap-10 mt-20">
+      <h1 className="text-[28px] font-bold w-full">{t("nav_bar.skills")}</h1>
+      <div className="flex max-md:flex-col gap-10 mt-20 mx-10">
         {skillsListFunction(t).map((item, idx) => (
           <div key={idx} className="flex-grow flex flex-col gap-10">
             <h1 className="text-xl font-bold text-center">{item.header}</h1>

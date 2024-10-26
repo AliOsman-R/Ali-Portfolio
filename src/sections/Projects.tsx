@@ -8,8 +8,8 @@ const Projects = () => {
 
   return (
     <div className="dark:text-white">
-      <h1 className="text-4xl font-bold w-full">{t("nav_bar.projects")}</h1>
-      <div className="flex flex-col gap-5 mt-20">
+      <h1 className="text-[28px] font-bold w-full">{t("nav_bar.projects")}</h1>
+      <div className="flex flex-col items-center gap-5 mt-20">
         {projectsListFunction(t).map((project, index) => (
           <div key={index} className="project-card-style">
             <a href={project.link} target="_blank">
