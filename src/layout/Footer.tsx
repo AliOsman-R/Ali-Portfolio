@@ -11,7 +11,7 @@ const Footer = () => {
   const {t } = useTranslation();
 
   return (
-    <div className="flex flex-col justify-center items-center w-full mt-10 border-t-2 p-5 pt-10 gap-10 dark:text-textColor">
+    <div className="flex flex-col justify-center items-center w-full mt-10 border-t p-5 pt-10 gap-10 dark:text-textColor">
       <div className="flex flex-col max-xl:items-center max-xl:gap-10 xl:flex-row xl:justify-around w-[70%]">
         <div className="flex justify-between h-[40px] w-[50%] xl:w-[30%]">
           <a 

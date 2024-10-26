@@ -19,7 +19,7 @@ const Projects = () => {
                 className="project-image-style" 
               />
             </a>
-            <div className="flex flex-col gap-5 w-full">
+            <div className="flex flex-col gap-4 w-full">
               <h2 className={commonStyle}>{t("projects.name")}</h2>
               <a 
                 href={project.link} 

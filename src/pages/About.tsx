@@ -15,7 +15,7 @@ const About = () => {
       <div className="flex max-md:flex-col max-md:mt-10 mt-[60px] gap-20">
 
         <div className="flex flex-grow flex-col gap-5 w-full">
-          <div className="flex max-sm:flex-col gap-5 max-md:flex-row md:flex-col max-md:items-center">
+          <div className="flex max-sm:flex-col gap-5 max-md:flex-row md:flex-col xl:flex-row xl:items-center max-md:items-center">
             <img 
             src={"/Ali-pic.jpg"} 
             alt="Ali's image" 
