@@ -1,7 +1,7 @@
 export type NavBarType = {
     name:string,
     to:string,
-    isHomeSection:boolean
+    isRouteLink:boolean
 }
 
 
@@ -10,6 +10,6 @@ export type ContextProps = {
 }
   
 export type GlobalStatesType = {
-    activeLink:number,
-    setActiveLink:React.Dispatch<React.SetStateAction<number>>
+    activeLink:string,
+    setActiveLink:React.Dispatch<React.SetStateAction<string>>
 }

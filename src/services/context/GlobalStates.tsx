@@ -4,7 +4,7 @@ import {type ContextProps, type GlobalStatesType } from '../../types/types';
 
 export const GlobalContext = createContext<GlobalStatesType | null>(null);
 const GlobalStates = ({children}: ContextProps) => {
-  const [activeLink, setActiveLink] = useState(0);
+  const [activeLink, setActiveLink] = useState("/");
 
   return (
     <GlobalContext.Provider value={{activeLink, setActiveLink}}>

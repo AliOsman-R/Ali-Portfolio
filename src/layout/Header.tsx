@@ -6,25 +6,30 @@ import { BiMenu, BiX } from "react-icons/bi";
 import Navbar from "../components/Navbar";
 
 const menuCloseBtnStyle = 'absolute transition-all duration-500 ease-out transform'
+const savedTheme = localStorage.getItem('theme');
+const prefersThemekMode = savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
 
 const Header = () => {
-  const [pageMode, setPageMode] = useState("light")
+  const [pageThemeMode, setPageThemeMode] = useState(prefersThemekMode)
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const {i18n} = useTranslation();
 
   useEffect(() => {
     const savedMode = localStorage.getItem('theme');
     if (savedMode) {
-      setPageMode(savedMode);
-      document.documentElement.classList.toggle("dark", savedMode === "dark");
+      return toggleClass(savedMode)
     }
   }, []);
   
   const handleMode = () => {
-    const newMode = pageMode === "light" ? "dark" : "light";
-    setPageMode(newMode);
-    document.documentElement.classList.toggle("dark", newMode === "dark");
+    const newMode = pageThemeMode === "light" ? "dark" : "light";
+    toggleClass(newMode)
     localStorage.setItem('theme', newMode);
+  }
+
+  const toggleClass = (theme: string) => {
+    setPageThemeMode(theme);
+    document.documentElement.classList.toggle("dark", theme === "dark");
   }
 
   const toggleMenu = () => {
@@ -74,7 +79,7 @@ const Header = () => {
         onClick={handleMode}
         className="navbar-change-mode-style"
       >
-        {pageMode === "light" ? <FaMoon size={20} /> : <MdOutlineLightMode size={20} />}
+        {pageThemeMode === "light" ? <FaMoon size={20} /> : <MdOutlineLightMode size={20} />}
       </button>
     </div>
   </div>

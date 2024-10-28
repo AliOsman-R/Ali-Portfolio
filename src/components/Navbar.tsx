@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import { navBarListFunction } from "../data/data";
-import useActivateLink from "../hooks/useActiveLink";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { navBarList } from "../data/data";
+import { useActiveLink } from "../services/context/GlobalStates";
+import Cookies from 'js-cookie';
 
 const Navbar = () => {
-  const {activeLink, handleActiveLink} = useActivateLink()
-  const {i18n, t } = useTranslation();
+  const {i18n} = useTranslation();
   const selectPosition = i18n.language === 'en'? "ml-auto" : "mr-auto"
   
   useEffect(() => {
@@ -14,23 +14,17 @@ const Navbar = () => {
   }, [i18n, i18n.language])
 
   const handleLangChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    i18n.changeLanguage(e.target.value)
+    const lang = e.target.value
+    const dir = lang === 'en'? 'ltr' : 'rtl'
+    i18n.changeLanguage(lang)
+    Cookies.set('i18next', lang, { expires: 30 });
+    Cookies.set('langDir', dir, { expires: 30 });
   }
 
   return(
     <>
       <div className={`flex md:flex-row items-center w-full flex-col max-md:gap-10 gap-3 md:text-sm `}>
-        {navBarListFunction(t).map((item,index) => (
-          <Link  
-            key={index} 
-            to={item.isHomeSection ? '/' : `/${item.to}`}
-            onClick={() => handleActiveLink(item.to, item.isHomeSection, index)}
-            className={`navbar-link-style ${index === activeLink ?
-                'text-black dark:text-white' : 'text-btnColor dark:text-[#c7c7c7]'}`} 
-          >
-            {item.name}
-          </Link >
-        ))}
+        <NavLinks/> 
         <select 
           onChange={handleLangChange}
           value={i18n.language}
@@ -45,3 +39,63 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+export const NavLinks = () => {
+  const {activeLink, setActiveLink} = useActiveLink()
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, to: string) => {
+    e.preventDefault();
+    hanldeSlectedLink(to)
+
+    if (location.pathname === "/about") {
+      navigate("/");  
+      setTimeout(() => {
+        window.location.hash = to;  
+      }, 0); 
+    } else {
+      window.location.hash = to;  
+    }
+  };
+
+  const hanldeSlectedLink = (to: string) => {
+    setActiveLink(to)
+    if (location.pathname === "/") {
+        window.location.hash = to;  
+    }
+  }
+
+  const hanldeLinkStyle = (to: string) => {
+    return `navbar-link-style ${to === activeLink ?
+                'text-black dark:text-white' : 'text-btnColor dark:text-[#c7c7c7]'}`
+  }
+
+  return(
+    <>
+      {navBarList.map(({to, name, isRouteLink},index) => (
+        isRouteLink? (
+          <Link  
+            key={index} 
+            to={to}
+            onClick={()=> hanldeSlectedLink(to)}
+            className={hanldeLinkStyle(to)} 
+          >
+            {t(name)}
+          </Link >
+        ):(
+          <a 
+          key={index} 
+          href={`#${to}`} 
+          onClick={(e) =>handleLinkClick(e, to)}
+          className={hanldeLinkStyle(to)} 
+          >
+            {t(name)}
+          </a>
+        )
+      ))}
+    </>
+  )
+}

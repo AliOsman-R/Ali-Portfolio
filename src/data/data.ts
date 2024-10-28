@@ -1,4 +1,3 @@
-import { TFunction } from "i18next"
 import { NavBarType } from "../types/types";
 import htmlImage from '../assets/html.png'
 import cssImage from '../assets/css.jpeg'
@@ -15,58 +14,51 @@ import jwtImage from '../assets/JWT.jpeg'
 import notesApp from '../assets/notesApp.png'
 import portfolioWeb from '../assets/portfolioApp.png'
 
-export const navBarListFunction = (t:TFunction<"translation", undefined>) => {
 
-    const navBarList: NavBarType[] = [
-        { name: t("nav_bar.home"), to: '/', isHomeSection: true }, 
-        { name: t("nav_bar.about"), to: 'about', isHomeSection: false },
-        { name: t("nav_bar.skills"), to: 'skills', isHomeSection: true },
-        { name: t("nav_bar.projects"), to: 'projects', isHomeSection: true },
-        { name: t("nav_bar.contact"), to: 'contact', isHomeSection: true }
-      ];
+export const navBarList: NavBarType[] = [
+    { name: "nav_bar.home", to: '/', isRouteLink: true }, 
+    { name: "nav_bar.about", to: 'about', isRouteLink: true },
+    { name: "nav_bar.skills", to: 'skills', isRouteLink: false },
+    { name: "nav_bar.projects", to: 'projects', isRouteLink: false },
+    { name: "nav_bar.contact", to: 'contact', isRouteLink: false }
+  ];
 
-    return navBarList
-}
 
-export const skillsListFunction = (t:TFunction<"translation", undefined>) => {
 
-    const skillsList = [
-        {
-          header:t('front_end'), 
-          skills:
-          [
-            {image:htmlImage, name:"HTML", level:t('level.advanced')},
-            {image:cssImage, name:"CSS", level:t('level.advanced')},
-            {image:typeScriptImage, name:"TypeScript", level:t('level.experienced')},
-            {image:tailwindImage, name:"Tailwind", level:t('level.experienced')},
-            {image:javaScriptImage, name:"JavaScript", level:t('level.advanced')},
-            {image:reactImage, name:"React JS", level:t('level.advanced')},
-          ]
-        },
-        {
-          header:t('back-end_&_other_tools'), 
-          skills:
-          [
-            {image:pythonImage, name:"Python", level:t('level.advanced')},
-            {image:fastApiImage, name:"FastAPI", level:t('level.intermediate')},
-            {image:gitImage, name:"Git", level:t('level.experienced')},
-            {image:mongoDbImage, name:"MongoDB", level:t('level.experienced')},
-            {image:expressImage, name:"Express JS", level:t('level.intermediate')},
-            {image:jwtImage, name:"JWT, Sessions", level:t('level.intermediate')},
-          ]
-        }
-        ]
+export const skillsList = [
+    {
+      header:'front_end', 
+      skills:
+      [
+        {image:htmlImage, name:"HTML", level:'level.advanced'},
+        {image:cssImage, name:"CSS", level:'level.advanced'},
+        {image:typeScriptImage, name:"TypeScript", level:'level.experienced'},
+        {image:tailwindImage, name:"Tailwind", level:'level.experienced'},
+        {image:javaScriptImage, name:"JavaScript", level:'level.advanced'},
+        {image:reactImage, name:"React JS", level:'level.advanced'},
+      ]
+    },
+    {
+      header:'back-end_&_other_tools', 
+      skills:
+      [
+        {image:pythonImage, name:"Python", level:'level.advanced'},
+        {image:fastApiImage, name:"FastAPI", level:'level.intermediate'},
+        {image:gitImage, name:"Git", level:'level.experienced'},
+        {image:mongoDbImage, name:"MongoDB", level:'level.experienced'},
+        {image:expressImage, name:"Express JS", level:'level.intermediate'},
+        {image:jwtImage, name:"JWT, Sessions", level:'level.intermediate'},
+      ]
+    }
+]
     
-    return skillsList
-}
 
 
-export const projectsListFunction = (t:TFunction<"translation", undefined>) => {
 
-  const projectsList = [
+export const projectsList = [
     {
       projectName:"My Portfolio",
-      description:t("projects.portfolio"),
+      description:"projects.portfolio",
       link:"https://ali-portfolio-2024.vercel.app/",
       github:"https://github.com/AliOsman-R/Ali-Portfolio",
       tools:["React.js", "Tailwind"],
@@ -74,13 +66,10 @@ export const projectsListFunction = (t:TFunction<"translation", undefined>) => {
     },
     {
       projectName:"Notes App",
-      description:t("projects.notesApp"),
+      description:"projects.notesApp",
       link:"https://alinotesweb.netlify.app/",
       github:"https://github.com/AliOsman-R/Notes-App",
       tools:["React.js", "Tailwind"],
       image:notesApp
     },
-  ]
-
-  return projectsList
-}
+]

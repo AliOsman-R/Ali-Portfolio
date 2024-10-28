@@ -1,14 +1,8 @@
 import { MdOutlineEmail } from "react-icons/md"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
-import { navBarListFunction } from "../data/data"
-import { Link} from "react-router-dom"
-import { useTranslation } from "react-i18next"
-import useActivateLink from "../hooks/useActiveLink"
-
+import { NavLinks } from "../components/Navbar"
 
 const Footer = () => {
-  const {handleActiveLink} = useActivateLink()
-  const {t } = useTranslation();
 
   return (
     <div className="flex flex-col justify-center items-center w-full mt-10 border-t p-5 pt-10 gap-10 dark:text-textColor">
@@ -36,16 +30,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="grid grid-cols-3 gap-10 gap-x-[100px]">
-        {navBarListFunction(t).map((item,index) => (
-          <Link  
-            key={index} 
-            to={item.isHomeSection ? '/' : `/${item.to}`}
-            onClick={() => handleActiveLink(item.to, item.isHomeSection, index)}
-            className={`navbar-link-style`} 
-          >
-            {item.name}
-          </Link >
-        ))}
+          <NavLinks/>
         </div>
       </div>
       <span className="text-lg">&copy; Ali Osman 2024</span>

@@ -5,9 +5,33 @@ import About from "./pages/About";
 import { Toaster} from 'sonner';
 import Footer from "./layout/Footer";
 import GlobalStates from "./services/context/GlobalStates";
+import { useEffect, useState } from "react";
+import i18n from "./services/i18next/i18next";
+import { Spinner } from "./components/Loader";
 
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  
+  useEffect(() => {
+    
+    const loadLanguage = () => {
+      setIsLoading(false); 
+    };
+
+    i18n.on('initialized', loadLanguage);
+    
+    return () => {
+      i18n.off('initialized', loadLanguage);
+    };
+    
+  }, [])
+
+  if(isLoading) return (
+    <div className="flex justify-center items-center h-screen">
+      <Spinner/>
+    </div>
+  )
 
   return (
     <Router>
