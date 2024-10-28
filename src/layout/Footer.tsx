@@ -29,7 +29,7 @@ const Footer = () => {
             <FaLinkedinIn size={23}/>
           </a>
         </div>
-        <div className="grid grid-cols-3 gap-10 gap-x-[100px]">
+        <div className="grid grid-cols-3 gap-10 gap-x-[100px] max-xs:grid-cols-2">
           <NavLinks/>
         </div>
       </div>

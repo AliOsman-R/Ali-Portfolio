@@ -43,7 +43,7 @@ const Header = () => {
       <div className="md:hidden dark:text-white">
         <button 
           onClick={toggleMenu} 
-          className={`flex items-center relative ${i18n.language === "en"? "" : "right-10"}`}
+          className={`flex items-center relative ${i18n.language === "en"? "" : ""}`}
         >
             <span
             className={`${menuCloseBtnStyle} ${
