@@ -24,7 +24,8 @@ export default {
         hoverIcon:"#9696966f"
       },
       screens:{
-        xs:"400px"
+        xs:"400px",
+        "3xl":"2300px",
       },
       animation: {
         slideInFromRight:'slideInFromRight 1.5s ease-out forwards',

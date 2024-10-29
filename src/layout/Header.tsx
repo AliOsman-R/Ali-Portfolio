@@ -44,7 +44,7 @@ const Header = () => {
 
   return (
   <div className="navbar-style">
-    <div className="flex justify-between items-center container mx-auto py-5 w-[90%] max-xs:px-3">
+    <div className="flex justify-between items-center mx-auto py-5 w-[90%] max-xs:px-3">
       <div className="md:hidden dark:text-white">
         <button 
           onClick={toggleMenu} 
