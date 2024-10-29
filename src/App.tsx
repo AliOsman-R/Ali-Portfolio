@@ -8,6 +8,7 @@ import GlobalStates from "./services/context/GlobalStates";
 import { useEffect, useState } from "react";
 import i18n from "./services/i18next/i18next";
 import { Spinner } from "./components/Loader";
+import Page404 from "./pages/Page404";
 
 
 const App = () => {
@@ -43,6 +44,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/about' element={<About/>}/>
+                <Route path="/*" element={<Page404 />} />
             </Routes>
           </div>
           <Footer/>
