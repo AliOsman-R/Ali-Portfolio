@@ -28,7 +28,7 @@
     }
 
     .navbar-menu-style {
-        @apply md:hidden absolute top-[70px] left-0 right-0 h-screen w-full z-50 flex flex-col items-center gap-4 bg-gray-50 dark:bg-darkColor dark:text-white transition-all duration-500 ease-out
+        @apply md:hidden absolute top-[70px] left-0 right-0 min-h-screen w-full z-50 flex flex-col items-center gap-4 bg-gray-50 dark:bg-darkColor dark:text-white transition-all duration-500 ease-out
     }
 
     .navbar-change-mode-style {
