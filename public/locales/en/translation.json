@@ -14,7 +14,7 @@
         "intermediate": "Intermediate",
         "experienced":"Experienced"
     },
-    "description": "Engineering graduate with a strong foundation in coding and design. Proficient in CSS, HTML5, JavaScript, TypeScript, and Python, with experience in frameworks like React, Express.js, and FastAPI. Skilled in MongoDB, with knowledge of Laravel, MySQL, and Redis. Passionate about creating scalable, efficient software solutions across front and back end",
+    "description": "Full stack developer with a strong foundation in coding and design. Proficient in CSS, HTML5, JavaScript, TypeScript, and Python, with experience in frameworks like React, Express.js, and FastAPI. Skilled in MongoDB, with knowledge of Laravel, MySQL, and Redis. Passionate about creating scalable, efficient software solutions across front and back end",
     "front_end":"Front-end",
     "back-end_&_other_tools": "Back-end & Other Tools",
     "download_CV":"Download CV",
@@ -24,7 +24,8 @@
         "tools":"Tools",
         "github":"Github",
         "notesApp":"The Notes App is a simple and efficient tool that allows users to write, update, and delete notes effortlessly. It features a search function to find specific notes and includes a toggle between light and dark mode for a personalized experience.",
-        "portfolio":"A showcase of my skills, projects, and professional background in web development."
+        "portfolio":"A showcase of my skills, projects, and professional background in web development.",
+        "cafeX":"CafeX is a dynamic platform that connects café owners with customers effortlessly. It allows café owners to showcase their offerings while helping customers discover cozy spots, unique events, and great coffee. With a focus on stories, comfort, and connection, CafeX ensures every interaction is seamless and memorable."
     },
     "contact":{
         "title":"Send me a massage",
@@ -35,7 +36,7 @@
     },
     "about":{
         "title":"About Me",
-        "description":"Enthusiastic engineering graduate with solid background in coding and design. Proficient in CSS, HTML5, JavaScript, TypeScript, and Python, with hands-on experience in frameworks such as React, Express.js, and FastAPI. Skilled in database management with MongoDB, along with knowledge of Laravel, MySQL and Redis. Passionate about building efficient, scalable software solutions, with a strong understanding of both front-end and back-end development.",
+        "description":"Full stack developer with solid background in coding and design. Proficient in CSS, HTML5, JavaScript, TypeScript, and Python, with hands-on experience in frameworks such as React, Express.js, and FastAPI. Skilled in database management with MongoDB, along with knowledge of Laravel, MySQL and Redis. Passionate about building efficient, scalable software solutions, with a strong understanding of both front-end and back-end development.",
         "personal_information":{
             "title":"Personal Information",
             "name":"Name: Ali Osman",

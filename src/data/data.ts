@@ -13,6 +13,7 @@ import expressImage from '../assets/ExpressJS.png'
 import jwtImage from '../assets/JWT.jpeg'
 import notesApp from '../assets/notesApp.png'
 import portfolioWeb from '../assets/portfolioApp.png'
+import cafeX from '../assets/cafeXApp.png'
 
 
 export const navBarList: NavBarType[] = [
@@ -56,6 +57,14 @@ export const skillsList = [
 
 
 export const projectsList = [
+    {
+      projectName:"Books Cafe Management",
+      description:"projects.cafeX",
+      link:"https://books-cafe-management.vercel.app/",
+      github:"https://github.com/AliOsman-R/Books-cafe-frontend",
+      tools:["React.js", "Express.js", "MongoDB", "Socket.io", "S3 bucket AWS", "Tailwind"],
+      image:cafeX
+    },
     {
       projectName:"My Portfolio",
       description:"projects.portfolio",
