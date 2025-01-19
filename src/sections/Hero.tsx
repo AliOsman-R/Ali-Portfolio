@@ -49,12 +49,19 @@ const Hero = () => {
           </a>
           <a 
             href='/Ali Osman Cv.pdf'
-            download={'/Ali Osman Cv.pdf'}
+            download={'/Ali Osman CV.pdf'}
             className=' bg-blue-500 px-3 py-2 text-white rounded-md hover:bg-blue-400'
           >
             {t("download_CV")}
           </a>
         </div>
+        <a 
+          href='/FYP Cert_S2 23-24_ALI OSMAN RAHMA GIBRAIL.pdf'
+          download={'/FYP Cert_S2 23-24_ALI OSMAN RAHMA GIBRAIL.pdf'}
+          className={`bg-blue-500 px-3 py-2 text-white rounded-md hover:bg-blue-400 text-center w-[80%] max-xl:w-full`}
+        >
+          {t("download_CR")}
+        </a>
       </div>
       <img 
         ref={imageRef} 

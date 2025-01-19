@@ -30,7 +30,7 @@ const About = () => {
           </p>
           <a 
             href='/Ali Osman Cv.pdf'
-            download={'/Ali Osman Cv.pdf'}
+            download={'/Ali Osman CV.pdf'}
             className={`max-w-[50%] bg-blue-500 px-3 py-2 text-white rounded-md hover:bg-blue-400 ${cvPosition}`}
           >
             {t("download_CV")}
